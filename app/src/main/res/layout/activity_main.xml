@@ -66,9 +66,10 @@
             android:id="@+id/button5"
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:layout_margin="0dp"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/button4"
-            android:src="@drawable/information"/>
+            android:src="@drawable/information" />
 
     </LinearLayout>
 
@@ -78,6 +79,49 @@
         android:scaleType="centerCrop"
         android:src="@drawable/couple" />
 
+    <LinearLayout
+        android:id="@+id/functionBar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/functionButton1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sleep"
+            android:elevation="0dp"
+            android:scaleType="fitCenter"
+            android:scrollbarSize="0dp" />
+
+        <ImageButton
+            android:id="@+id/functionButton2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/functionButton1"
+            android:src="@drawable/photo"
+            android:elevation="0dp"
+            android:scaleType="fitCenter"
+            android:scrollbarSize="0dp" />
+
+        <ImageButton
+            android:id="@+id/functionButton3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/functionButton2"
+            android:src="@drawable/calendar"
+            android:scaleType="fitCenter"
+            android:elevation="0dp"
+            android:scrollbarSize="0dp" />
+
+    </LinearLayout>
 
 
 
