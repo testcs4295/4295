@@ -1,12 +1,10 @@
 package com.example.youhan.a4295;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -17,8 +15,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("Home");
-        //getActionBar().setBackgroundDrawable();
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
@@ -43,20 +39,6 @@ public class MainActivity extends AppCompatActivity {
         //i1.setBackgroundColor(Color.parseColor("#ffffff"));
         //i2.setBackgroundColor(Color.parseColor("#ffffff"));
         //i3.setBackgroundColor(Color.parseColor("#ffffff"));
-
-        m5.setOnClickListener(new ImageButton.OnClickListener(){
-            public void onClick(View v){
-                Intent i = new Intent();
-                i.setClass(MainActivity.this, Profile.class);
-                startActivity(i);
-            }
-        });
-
-        m4.setOnClickListener(new ImageButton.OnClickListener(){
-            public void onClick(View v){
-                Intent i
-            }
-        });
 
     }
 }
