@@ -54,7 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
         m4.setOnClickListener(new ImageButton.OnClickListener(){
             public void onClick(View v){
-                Intent i
+                Intent i = new Intent();
+                i.setClass(MainActivity.this, Location.class);
+                startActivity(i);
             }
         });
 

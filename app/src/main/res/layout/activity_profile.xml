@@ -57,7 +57,7 @@
             android:src="@drawable/chat"/>
 
         <ImageButton
-            android:id="@+id/button4_P"
+            android:id="@+id/button4_p"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             android:layout_weight="1"
             android:layout_margin="0dp"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/button4_P"
+            android:layout_toRightOf="@id/button4_p"
             android:src="@drawable/information" />
 
     </LinearLayout>

@@ -13,13 +13,14 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         setTitle("Profile");
+
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar_p);
         setSupportActionBar(myToolbar);
 
         ImageButton m1=(ImageButton)findViewById(R.id.button1_p);
         ImageButton m2=(ImageButton)findViewById(R.id.button2_p);
         ImageButton m3=(ImageButton)findViewById(R.id.button3_p);
-        ImageButton m4=(ImageButton)findViewById(R.id.button4_P);
+        ImageButton m4=(ImageButton)findViewById(R.id.button4_p);
         ImageButton m5=(ImageButton)findViewById(R.id.button5_p);
 
         m1.setBackgroundColor(Color.parseColor("#808080"));
