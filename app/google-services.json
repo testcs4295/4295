@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "883102362402",
+    "firebase_url": "https://cs4295-d3b70.firebaseio.com",
+    "project_id": "cs4295-d3b70",
+    "storage_bucket": "cs4295-d3b70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883102362402:android:008d9b40723eba38",
+        "android_client_info": {
+          "package_name": "com.example.youhan.a4295"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883102362402-rj5q6epo3muvm1h54ieib33nerkdqfmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkwN58szV7vHSyLExulHpu_TjHxDuu5xE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

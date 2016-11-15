@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.youhan.a4295">
+<<<<<<< HEAD
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -9,13 +10,16 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+=======
+    <uses-permission android:name="android.permission.INTERNET" />
+>>>>>>> 2c27282fd8690c4c99ed7e16a938fab21a11e922
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".PreLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,6 +27,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Profile" />
+<<<<<<< HEAD
         <activity android:name=".Location" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -43,6 +48,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.youhan.a4295.Location" />
         </activity>
+=======
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity"></activity>
+>>>>>>> 2c27282fd8690c4c99ed7e16a938fab21a11e922
     </application>
 
 </manifest>

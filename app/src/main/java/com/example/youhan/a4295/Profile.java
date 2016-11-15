@@ -1,10 +1,7 @@
 package com.example.youhan.a4295;
 
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.widget.ImageButton;
 
 public class Profile extends AppCompatActivity {
 
@@ -12,6 +9,7 @@ public class Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+<<<<<<< HEAD
         setTitle("Profile");
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar_p);
@@ -29,6 +27,7 @@ public class Profile extends AppCompatActivity {
         m4.setBackgroundColor(Color.parseColor("#808080"));
         m5.setBackgroundColor(Color.parseColor("#808080"));
 
+=======
+>>>>>>> 2c27282fd8690c4c99ed7e16a938fab21a11e922
     }
-
 }
