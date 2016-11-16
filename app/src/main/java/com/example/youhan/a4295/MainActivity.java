@@ -1,10 +1,12 @@
 package com.example.youhan.a4295;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -40,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         //i2.setBackgroundColor(Color.parseColor("#ffffff"));
         //i3.setBackgroundColor(Color.parseColor("#ffffff"));
 
-<<<<<<< HEAD
         m5.setOnClickListener(new ImageButton.OnClickListener(){
             public void onClick(View v){
                 Intent i = new Intent();
@@ -57,7 +58,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-=======
->>>>>>> 2c27282fd8690c4c99ed7e16a938fab21a11e922
     }
 }

@@ -37,10 +37,26 @@ public class Location extends AppCompatActivity {
         map_image.setOnClickListener(new ImageView.OnClickListener(){
             public void onClick(View view){
                 Intent i = new Intent();
-                i.setClass(Location.this, MapsActivity.class);
+                i.setClass(Location.this, Map.class);
                 startActivity(i);
             }
 
+        });
+
+        m1.setOnClickListener(new ImageButton.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent();
+                i.setClass(Location.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+        m5.setOnClickListener(new ImageButton.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent();
+                i.setClass(Location.this, Profile.class);
+                startActivity(i);
+            }
         });
     }
 }
