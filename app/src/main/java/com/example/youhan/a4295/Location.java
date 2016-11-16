@@ -42,5 +42,21 @@ public class Location extends AppCompatActivity {
             }
 
         });
+
+        m1.setOnClickListener(new ImageButton.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent();
+                i.setClass(Location.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+        m5.setOnClickListener(new ImageButton.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent();
+                i.setClass(Location.this, Profile.class);
+                startActivity(i);
+            }
+        });
     }
 }
