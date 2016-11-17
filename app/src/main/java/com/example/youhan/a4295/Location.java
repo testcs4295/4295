@@ -8,14 +8,25 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import static com.example.youhan.a4295.R.styleable.Toolbar;
 
 public class Location extends AppCompatActivity {
+    private TextView loverName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
         setTitle("Location");
+
+        Intent i = getIntent();
+        final String user = i.getStringExtra("username");
+        final String partner = i.getStringExtra("partnername");
+
+        loverName = (TextView)findViewById(R.id.tvLoverName);
+        loverName.setText(partner);
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar_p);
         setSupportActionBar(myToolbar);
@@ -38,6 +49,8 @@ public class Location extends AppCompatActivity {
             public void onClick(View view){
                 Intent i = new Intent();
                 i.setClass(Location.this, Map.class);
+                i.putExtra("username",user);
+                i.putExtra("partnername",partner);
                 startActivity(i);
             }
 
@@ -47,6 +60,8 @@ public class Location extends AppCompatActivity {
             public void onClick(View v){
                 Intent i = new Intent();
                 i.setClass(Location.this, MainActivity.class);
+                i.putExtra("username",user);
+                i.putExtra("partnername",partner);
                 startActivity(i);
             }
         });
@@ -55,6 +70,8 @@ public class Location extends AppCompatActivity {
             public void onClick(View v){
                 Intent i = new Intent();
                 i.setClass(Location.this, Profile.class);
+                i.putExtra("username",user);
+                i.putExtra("partnername",partner);
                 startActivity(i);
             }
         });

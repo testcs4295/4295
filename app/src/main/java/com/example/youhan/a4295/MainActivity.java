@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent i = getIntent();
+        final String user = i.getStringExtra("username");
+        final String partner = i.getStringExtra("partnername");
+
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
@@ -46,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 Intent i = new Intent();
                 i.setClass(MainActivity.this, Profile.class);
+                i.putExtra("username",user);
+                i.putExtra("partnername",partner);
                 startActivity(i);
             }
         });
@@ -54,9 +60,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 Intent i = new Intent();
                 i.setClass(MainActivity.this, Location.class);
+                i.putExtra("username",user);
+                i.putExtra("partnername",partner);
                 startActivity(i);
             }
         });
 
+        m3.setOnClickListener(new ImageButton.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent();
+                i.setClass(MainActivity.this, ChatActivity.class);
+                i.putExtra("username",user);
+                i.putExtra("partnername",partner);
+                startActivity(i);
+            }
+        });
     }
 }
